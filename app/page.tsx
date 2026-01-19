@@ -27,15 +27,15 @@ export default function Home() {
             where you are now and reached where you want to be.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-            <Link href="/signup">
+            <Link href="/sign-up">
               <Button size="lg" className="text-lg px-8">
                 Get Started Free
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <Link href="/demo">
+            <Link href="/discover">
               <Button size="lg" variant="outline" className="text-lg px-8">
-                View Demo
+                Browse Alumni
               </Button>
             </Link>
           </div>
@@ -195,15 +195,15 @@ export default function Home() {
             Join hundreds of students connecting with alumni who know exactly what it takes to succeed.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/signup">
+            <Link href="/sign-up">
               <Button size="lg" variant="secondary" className="text-lg px-8">
                 Create Free Account
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <Link href="/demo">
+            <Link href="/discover">
               <Button size="lg" variant="outline" className="text-lg px-8 bg-white/10 border-white text-white hover:bg-white/20">
-                Try Demo
+                Browse Alumni
               </Button>
             </Link>
           </div>
