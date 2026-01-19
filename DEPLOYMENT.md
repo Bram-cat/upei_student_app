@@ -8,7 +8,7 @@
 2. Click "New Project"
 3. Fill in:
    - **Name**: alumnipath-demo
-   - **Database Password**: (create a strong password - save it!)
+   - **Database Password**: (create a strong password - save it!)000
    - **Region**: Choose closest to your target audience
 4. Click "Create new project" and wait ~2 minutes for setup
 
@@ -33,6 +33,7 @@
    - Click "Import"
 
 4. Configure environment variables (click "Environment Variables"):
+
    ```
    NEXT_PUBLIC_SUPABASE_URL=https://xxxxx.supabase.co
    NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key-here
@@ -74,31 +75,35 @@ To populate your database with demo data for testing:
 
 ## Environment Variables Reference
 
-| Variable | Description | Where to Get It |
-|----------|-------------|-----------------|
-| `NEXT_PUBLIC_SUPABASE_URL` | Your Supabase project URL | Supabase → Settings → API |
-| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Public anonymous key | Supabase → Settings → API |
-| `SUPABASE_SERVICE_ROLE_KEY` | Admin key (keep secret!) | Supabase → Settings → API |
-| `NEXTAUTH_URL` | Your app's public URL | Your Vercel deployment URL |
-| `NEXTAUTH_SECRET` | Random secret for JWT | `openssl rand -base64 32` |
+| Variable                        | Description               | Where to Get It            |
+| ------------------------------- | ------------------------- | -------------------------- |
+| `NEXT_PUBLIC_SUPABASE_URL`      | Your Supabase project URL | Supabase → Settings → API  |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Public anonymous key      | Supabase → Settings → API  |
+| `SUPABASE_SERVICE_ROLE_KEY`     | Admin key (keep secret!)  | Supabase → Settings → API  |
+| `NEXTAUTH_URL`                  | Your app's public URL     | Your Vercel deployment URL |
+| `NEXTAUTH_SECRET`               | Random secret for JWT     | `openssl rand -base64 32`  |
 
 ## Troubleshooting
 
 ### "Module not found" errors
+
 - Make sure all dependencies are in `package.json`
 - Try "Redeploy" in Vercel
 
 ### Database connection issues
+
 - Verify all Supabase environment variables are correct
 - Check if SQL migration ran successfully
 - Verify Supabase project is not paused
 
 ### CSS/Styling issues
+
 - Clear your browser cache
 - Check if Tailwind config is correct
 - Verify `globals.css` is imported in `layout.tsx`
 
 ### Authentication not working
+
 - Verify `NEXTAUTH_URL` matches your actual Vercel URL (no trailing slash)
 - Check `NEXTAUTH_SECRET` is set
 - Redeploy after changing environment variables
@@ -125,6 +130,7 @@ To populate your database with demo data for testing:
 ## Support
 
 For issues:
+
 1. Check Vercel deployment logs
 2. Check Supabase logs
 3. Review browser console for errors

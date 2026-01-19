@@ -157,7 +157,7 @@ export default function Home() {
                 <CardTitle>Structured Mentorship</CardTitle>
                 <CardDescription className="text-base">
                   Time-efficient 15-45 minute sessions focused on specific topics: course navigation,
-                  project reviews, interview prep. Respect everyone's time.
+                  project reviews, interview prep. Respect everyone&apos;s time.
                 </CardDescription>
               </CardHeader>
             </Card>
