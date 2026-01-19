@@ -16,12 +16,9 @@ export default function DashboardLayout({
 
   const navigation = [
     { name: 'Dashboard', href: '/dashboard', icon: LayoutDashboard },
-    { name: 'Discover Alumni', href: '/discover', icon: Users },
+    { name: 'Browse Seniors', href: '/discover', icon: Users },
     { name: 'My Connections', href: '/connections', icon: Users },
     { name: 'Sessions', href: '/sessions', icon: Calendar },
-    { name: 'Career Pathways', href: '/pathways', icon: Target },
-    { name: 'Courses', href: '/courses', icon: BookOpen },
-    { name: 'Opportunities', href: '/opportunities', icon: Briefcase },
     { name: 'Profile', href: '/profile', icon: User },
   ]
 
