@@ -157,7 +157,7 @@ export default function EditProfilePage() {
       <Card>
         <CardHeader>
           <CardTitle>About You</CardTitle>
-          <CardDescription>Tell seniors what you're looking for (max 200 characters)</CardDescription>
+          <CardDescription>Tell seniors what you&apos;re looking for (max 200 characters)</CardDescription>
         </CardHeader>
         <CardContent>
           <textarea
